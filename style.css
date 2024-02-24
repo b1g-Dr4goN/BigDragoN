@@ -1,0 +1,567 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common */
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+#header {
+    height: 46px;
+    background-color: #0060a0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Not Common */
+
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li img {
+    position: absolute;
+    margin-left: 25px;
+    height: 46px;
+    top: 0;
+}
+
+#nav li .homePage {
+    margin-left: 140px;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a {
+    color: #0060a0;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    background-color: #ffffffc5;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 175px;
+    background-color: #0073c0;
+    box-shadow: 0 0 10px #0060a0;
+    z-index: 1;
+}
+
+#nav .subnav li:hover {
+    background-color: #0082d8;
+}
+
+#nav li:hover .subnav {
+    display: block;
+    animation: navFadeIn ease .3s;
+}
+
+#nav li .nav-dbl-right {
+    font-size: 12px;
+}
+
+#nav li .nav-dbl-down {
+    display: none;
+    font-size: 12px;
+}
+
+#nav li .contents:hover .nav-dbl-right {
+    display: none;
+}
+
+#nav li .contents:hover .nav-dbl-down {
+    display: contents;
+}
+
+#nav li .contact:hover .nav-dbl-right {
+    display: none;
+}
+
+#nav li .contact:hover .nav-dbl-down {
+    display: contents;
+}
+
+#header .search-btn { 
+    float: right;    
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 14px;
+    line-height: 46px;
+    padding: 0 22px;    
+    display: block;
+}
+
+#header .search-icon:hover {
+    color: #0073c0;
+    background-color: #ffffffc5;
+    cursor: pointer;
+}
+
+#banner {
+    margin-top: 46px;
+    padding-top: 55%;
+    background: url('/assets/img/Web\ Banner.png') bottom right / cover no-repeat;
+}  
+
+.aSol:hover {
+    cursor: pointer;
+}
+
+#content {
+    background-color: #bee8fc;
+}
+
+#content .content-section {
+    width: 70%;
+    padding: 100px 0 50px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading, 
+#content .section-subheading {
+    text-align: center;
+    font-size: 40px;
+    color: #002555;
+    font-weight: 1500;
+}
+
+#content .section-subheading {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #1e4372;
+    line-height: 1.4;
+}
+
+#content .content-section .about-image {
+    padding-top: 100%;
+    border-radius: 50%;
+    border: 6px solid #0099ff;
+    box-shadow: 0 0 15px #0099ff;
+    background: url(/assets/img/AoShin_Powerchord_2024.png) center center / cover no-repeat;
+}
+
+#content .content-section-2 {
+    background-color: #00306e;
+    height: 100%;
+}
+
+#content .content-section-2 .section-heading {
+    padding-top: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: #6eadff;
+    font-weight: 1500;
+}
+
+#content .content-section-2 .section-subheading {
+    padding-top: 50px;
+    padding-bottom: 75px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color: #b1d3ff;
+    line-height: 1.4;
+}
+
+#content .content-section-2 .member-list .member-image {
+    border-radius: 25%;
+    border: 5px solid #00e1ff;
+    padding-top: 100%;
+    box-shadow: 0 0 10px #00e1ff;
+}
+
+#content .content-section-2 .member-list .member-image-1 {
+    background: url(/assets/img/Little_Legend_Ao_Shin_profileicon.webp) center center / cover no-repeat;
+}
+
+#content .content-section-2 .member-list .member-image-2 {
+    background: url(/assets/img/Little_Legend_Choncc_profileicon.webp) center center / cover no-repeat;
+}
+
+#content .content-section-2 .member-list .member-image-3 {
+    background: url(/assets/img/Little_Legend_Umbra_profileicon.webp) center center / cover no-repeat;
+}
+
+#content .content-section-2 .member-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .content-section-2 .member-items {
+    float: left;
+    width: 25%;
+    margin: 0 35px;
+}
+
+#content .content-section-2 .member-items .member-name {
+    text-align: center;
+    color: #b1d3ff;
+    font-weight: 1000;
+    font-size: 24px;
+    padding-top: 30px;
+    margin-bottom: 75px;
+}
+
+#content .content-section-2 .member-list .member-image:hover {
+    background-size: 125%;
+}
+
+.THuniversity {
+    padding-top: 50%;
+    background: url("/assets/img/DHTongHopHN.jpg") center center / cover no-repeat;
+    box-shadow: 0 0 20px #006e7c;
+    border-radius: 5%;
+}
+
+.THuniversity:hover {
+    background-size: 110%;
+}
+
+#content #ContactMe {
+    position: relative;
+    display: block;
+}
+
+#content #ContactMe .section-heading {
+    text-align: left;
+    font-size: 40px;
+    color: #89caff;
+    font-weight: 1500;
+    width: 27%;
+    margin-left: 5%;
+    padding-bottom: 4%;
+    display: inline-block;
+    padding-top: 60px;
+}
+
+#content #ContactMe .section-subheading {
+    text-align: left;
+    font-size: 18px;
+    color: #ddebfd;
+    font-weight: 1500;
+    display: inline-block;
+    padding: 0;
+}
+
+#content #ContactMe .messageForm {
+    display: inline-block;
+}
+
+#content #ContactMe .messageForm .form-control {
+    padding: 8px;
+    border: 1px solid #bbb;
+    width: 100%;
+}
+
+#content #ContactMe .messageForm .submitButton {
+    border: 1px solid #bbb;
+    width: 100%;
+    height: 32px;
+    background-color: #00e1ff;
+}
+
+#content #ContactMe .bigdragonImage {
+    display: inline-block;
+    float: right;
+    height: 0;
+    width: 0;
+    margin-top: 45px;
+    margin-right: 5%;
+    padding-bottom: 120px;
+    padding-left: 300px;
+    background: url(/assets/img/bigdragon.png) center center / cover no-repeat;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;   
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal .modal-container {
+    width: 82.5%;
+    min-height: 87.5%;
+    background-color: #fff;
+    position: relative;
+    animation: modalFadeIn ease .6s;
+}
+
+.modal .modal-container .modal-header {
+    width: 100%;
+    background-color: #00586e;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9e7f8;
+    font-size: 40px;
+}
+
+.modal .modal-container .modal-close {
+    position: absolute;
+    color: #d9e7f8;
+    font-size: 15px;
+    padding: 12px;
+    right: 0;
+}
+
+.modal .modal-container .modal-close:hover {
+    color: #005c63;
+    background-color: #9beffd;
+    cursor: pointer;
+}
+
+.modal .modal-content {
+    position: absolute;
+    width: 100%;
+    height: 88%;
+    bottom: 0;
+}
+
+.go-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 16px;
+    padding-right: 16px;
+    background-color: #00abc2;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.go-to-top:hover {
+    background-color: #56ebff;
+    color: #00abc2;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-150px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes navFadeIn {
+    from {
+        transform: translateY(-10px);
+    }
+    
+    to {
+        transform: translateY(0);
+    }
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.img1 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/aurelion-sol-lol-ashen-lord-splash-art-uhdpaper.com-4K-693.jpg) center center / cover no-repeat;
+}
+
+.img2 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/Aurelion_Sol_MechaSkin\ full.jpg) center center / cover no-repeat;
+}
+
+.img3 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/Storm_Dragon_Aurelion_Sol_wallpaper_1920x1080.jpg) center center / cover no-repeat;
+}
+
+.img4 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/Inkshadow_Aurelion_Sol.jpg) center center / cover no-repeat;
+}
+
+.img5 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/aure\ giap\ thin.jpg) center center / cover no-repeat;
+}
+
+.img6 {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: url(/assets/img/porcelain-protector-aurelion-sol-splash-art-v0-5gr7e6bsyzgc1.jpeg) center center / cover no-repeat;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
