@@ -159,7 +159,7 @@ html {
 #banner {
     margin-top: 46px;
     padding-top: 55%;
-    background: url('/assets/img/Web\ Banner.png') bottom right / cover no-repeat;
+    background: url("./Web\ Banner.png") bottom right / cover no-repeat;
 }  
 
 .aSol:hover {
@@ -200,7 +200,7 @@ html {
     border-radius: 50%;
     border: 6px solid #0099ff;
     box-shadow: 0 0 15px #0099ff;
-    background: url(/assets/img/AoShin_Powerchord_2024.png) center center / cover no-repeat;
+    background: url("./AoShin_Powerchord_2024.png") center center / cover no-repeat;
 }
 
 #content .content-section-2 {
@@ -234,15 +234,15 @@ html {
 }
 
 #content .content-section-2 .member-list .member-image-1 {
-    background: url(/assets/img/Little_Legend_Ao_Shin_profileicon.webp) center center / cover no-repeat;
+    background: url("./Little_Legend_Ao_Shin_profileicon.webp") center center / cover no-repeat;
 }
 
 #content .content-section-2 .member-list .member-image-2 {
-    background: url(/assets/img/Little_Legend_Choncc_profileicon.webp) center center / cover no-repeat;
+    background: url("./Little_Legend_Choncc_profileicon.webp") center center / cover no-repeat;
 }
 
 #content .content-section-2 .member-list .member-image-3 {
-    background: url(/assets/img/Little_Legend_Umbra_profileicon.webp) center center / cover no-repeat;
+    background: url("./Little_Legend_Umbra_profileicon.webp") center center / cover no-repeat;
 }
 
 #content .content-section-2 .member-list {
@@ -272,7 +272,7 @@ html {
 
 .THuniversity {
     padding-top: 50%;
-    background: url("/assets/img/DHTongHopHN.jpg") center center / cover no-repeat;
+    background: url("./DHTongHopHN.jpg") center center / cover no-repeat;
     box-shadow: 0 0 20px #006e7c;
     border-radius: 5%;
 }
@@ -333,7 +333,7 @@ html {
     margin-right: 5%;
     padding-bottom: 120px;
     padding-left: 300px;
-    background: url(/assets/img/bigdragon.png) center center / cover no-repeat;
+    background: url("./bigdragon.png") center center / cover no-repeat;
 }
 
 .modal {
@@ -508,7 +508,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/aurelion-sol-lol-ashen-lord-splash-art-uhdpaper.com-4K-693.jpg) center center / cover no-repeat;
+    background: url("./aurelion-sol-lol-ashen-lord-splash-art-uhdpaper.com-4K-693.jpg") center center / cover no-repeat;
 }
 
 .img2 {
@@ -516,7 +516,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/Aurelion_Sol_MechaSkin\ full.jpg) center center / cover no-repeat;
+    background: url("./Aurelion_Sol_MechaSkin\ full.jpg") center center / cover no-repeat;
 }
 
 .img3 {
@@ -524,7 +524,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/Storm_Dragon_Aurelion_Sol_wallpaper_1920x1080.jpg) center center / cover no-repeat;
+    background: url("./Storm_Dragon_Aurelion_Sol_wallpaper_1920x1080.jpg") center center / cover no-repeat;
 }
 
 .img4 {
@@ -532,7 +532,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/Inkshadow_Aurelion_Sol.jpg) center center / cover no-repeat;
+    background: url("./Inkshadow_Aurelion_Sol.jpg") center center / cover no-repeat;
 }
 
 .img5 {
@@ -540,7 +540,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/aure\ giap\ thin.jpg) center center / cover no-repeat;
+    background: url("./aure\ giap\ thin.jpg") center center / cover no-repeat;
 }
 
 .img6 {
@@ -548,7 +548,7 @@ html {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(/assets/img/porcelain-protector-aurelion-sol-splash-art-v0-5gr7e6bsyzgc1.jpeg) center center / cover no-repeat;
+    background: url("./porcelain-protector-aurelion-sol-splash-art-v0-5gr7e6bsyzgc1.jpeg") center center / cover no-repeat;
 }
 
 .active, .dot:hover {
