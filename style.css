@@ -53,6 +53,10 @@ html {
     right: 0;
 }
 
+.main {
+    overflow: hidden !important;
+}
+
 /* Not Common */
 
 #nav {
