@@ -57,6 +57,19 @@ html {
     overflow: hidden !important;
 }
 
+.copyright, .copyright a {
+    color: #e6fcff;
+    position: relative;
+    background-color: #00306e;
+    text-decoration: none;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.copyright a:hover{
+    color: #ff0000;
+}
+
 /* Not Common */
 
 #nav {
@@ -688,6 +701,7 @@ html {
     display: flex;
     text-align: center;
     justify-content: center;
+    color: #002555;
 }
 
 .menu-bar-modal .menubar-modal-container #menu-nav li:hover {
