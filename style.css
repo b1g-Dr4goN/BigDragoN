@@ -408,6 +408,7 @@ html {
 .go-to-top:hover {
     background-color: #56ebff;
     color: #00abc2;
+    transform: translate;
 }
 
 @keyframes modalFadeIn {
@@ -427,6 +428,15 @@ html {
     
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes menuNavFadeIn {
+    from {
+        transform: translateX(250px);
+    }
+    to {
+        transform: translateX(0);
     }
 }
 
@@ -564,4 +574,307 @@ html {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Responsive */
+#header .menu-bar {
+    float: right;
+}
+
+#header .menu-bar .menu-icon {
+    padding: 0 22px;
+    color: #fff;
+    line-height: 46px;
+    font-size: 14px;
+    display: none;
+}
+
+#header > .menu-bar:hover {
+    color: #014674;
+    text-decoration: none;
+    line-height: 46px;
+    background-color: #ffffffc5;
+    display: inline-block;
+}
+
+#header .menu-bar .subnav {
+    display: none;
+    position: absolute;
+    min-width: 175px;
+    background-color: #0073c0;
+    box-shadow: 0 0 10px #0060a0;
+    z-index: 1;
+}
+
+#header .menu-bar .subnav li:hover {
+    background-color: #0082d8;
+}
+
+#header .menu-bar:hover .subnav {
+    display: block;
+    animation: navFadeIn ease .3s;
+}
+
+.menu-bar-modal {
+    position: fixed;
+    top: 46px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background-color: rgb(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;   
+}
+
+.menu-bar-modal.open {
+    display: block; 
+}
+
+.menu-bar-modal .menubar-modal-container {
+    width: 70%;
+    height: 100%;
+    background-color: #cdfcff;
+    position: relative;
+    float: right;
+    animation: menuNavFadeIn ease .6s;
+}
+
+.menu-bar-modal .menubar-modal-container .modal-header {
+    width: 100%;
+    background-color: #00586e;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9e7f8;
+    font-size: 30px;
+}
+
+.menu-bar-modal .menubar-modal-container .modal-close{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 12px;
+    right: 0;
+}
+
+.menu-bar-modal .menubar-modal-container .modal-close:hover{
+    color: #00586e;
+    background-color: #82e6ff;
+}
+
+.menu-bar-modal .menubar-modal-container #menu-nav {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-bar-modal .menubar-modal-container #menu-nav li {
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    border-bottom: 1px solid #a7e9fa;
+}
+
+.menu-bar-modal .menubar-modal-container #menu-nav li a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu-bar-modal .menubar-modal-container #menu-nav li:hover {
+    background-color: #00cbeb;
+}
+
+.menu-bar-modal .menubar-modal-container #menu-nav li:hover a {
+    color: #e6fcff;
+}
+
+#header .iconMobile .home {
+    display: none;
+    height: 46px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+@media (max-width: 3820px) {
+    .section-1 {
+        width: 42.5% !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    .section-1 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 1600px) {
+    .section-1 {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .section-1 {
+        width: 55% !important;
+    }
+}
+
+@media (max-width: 1230px) {
+    .section-1 {
+        width: 62.5% !important;
+    }
+}
+
+@media (max-width: 1085px) {
+    .section-1 {
+        width: 70% !important;
+    }
+    .hope-and-wishes {
+        font-size: 16px !important;
+    }
+    #content #ContactMe {
+        position: relative;
+        display: block;
+    }
+    
+    #content #ContactMe .section-heading {
+        text-align: left;
+        font-size: 40px;
+        color: #89caff;
+        font-weight: 1500;
+        width: 40%;
+        margin-left: 5%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        display: inline-block;
+        
+    }
+    
+    #content #ContactMe .section-subheading {
+        text-align: left;
+        font-size: 18px;
+        color: #ddebfd;
+        font-weight: 1500;
+        padding: 0 !important;
+        padding-bottom: 18px !important;
+    }
+    
+    #content #ContactMe .messageForm {
+        display: inline-block;
+        padding-top: 20px;
+        width: 50% !important;
+    }
+    
+    #content #ContactMe .messageForm .form-control {
+        padding: 8px;
+        border: 1px solid #bbb;
+        width: 100%;
+    }
+    
+    #content #ContactMe .messageForm .submitButton {
+        border: 1px solid #bbb;
+        width: 100%;
+        height: 32px;
+        background-color: #00e1ff;
+    }
+    
+    #content #ContactMe .bigdragonImage {
+        display:none;
+    }
+}
+
+@media (max-width: 920px) {
+    .section-heading {
+        font-size: 30px !important;
+    }
+    .section-subheading {
+        font-size: 14px !important;
+    }
+    #nav {
+        display: none !important;
+    }
+    #header .iconMobile .home {
+        display: inline-block;
+    }
+
+    #header .menu-bar .menu-icon {
+        display: block !important;
+    }
+}
+
+@media (max-width: 720px) {
+    .section-heading {
+        font-size: 22px !important;
+    }
+    .section-subheading {
+        font-size: 10px !important;
+        padding-top: 40px !important;
+    }
+    .content-section {
+        width: 85% !important;
+        padding-top: 65px !important;
+    }
+    .member-items {
+        font-size: 12px !important;
+        font-weight: 500 !important;
+    }
+    #content .content-section-2 .member-list {
+        display: flex;
+        flex-wrap: wrap;   
+    }
+
+    #content .content-section-2 .member-items {
+        margin: 0;
+        width: 60%;
+    }
+    .menu-bar-modal .menubar-modal-container #menu-nav li a {
+        font-size: 12.5px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .content-section {
+        padding: 10px 0 !important;
+    }
+    .section-heading {
+        padding-top: 50px !important;
+        font-size: 20px !important;
+    }
+
+    .section-subheading {
+        padding-top: 40px !important;
+        font-size: 10px !important;
+        padding-bottom: 50px !important;
+    }
+
+    #content .content-section-2 .member-items .member-name{
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+    .hope-and-wishes {
+        font-size: 8.5px !important;
+    }
+    
+    .menu-bar-modal .menubar-modal-container {
+        width: 100%;
+    }
+
+    .menu-bar-modal .menubar-modal-container .modal-header {
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .menu-bar-modal .menubar-modal-container #menu-nav li a {
+        font-size: 12px;
+        padding: 12px 0;
+    }
 }
